@@ -113,7 +113,10 @@ App will run at:
 
 Frontend: http://localhost:5173
 Backend: http://localhost:5000
-🧠 Future Improvements
+
+```
+
+## 🧠 Future Improvements 
 
 CRDT-based collaborative editing
 
@@ -125,10 +128,11 @@ Cursor presence indicators
 
 Scalable WebSocket architecture with Redis
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Lohith M
 
 Computer Science Engineering Student
 
 Passionate about full-stack systems and developer tools.
+
