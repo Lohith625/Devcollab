@@ -62,7 +62,7 @@ This project was built to explore **real-time systems, containerized execution, 
 
 ### Real-time Collaboration
 
-![Collaboration](screenshots/collaboration.png)
+![Collaboration](screenshots/Collaboration.png)
 
 ---
 
@@ -130,4 +130,5 @@ Scalable WebSocket architecture with Redis
 Lohith M
 
 Computer Science Engineering Student
+
 Passionate about full-stack systems and developer tools.
