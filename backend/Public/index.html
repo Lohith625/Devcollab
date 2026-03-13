@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socket Test</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <h1>Socket Test</h1>
+  <script>
+    const socket = io("http://localhost:5000");
+  
+    const roomId = "testRoom";
+  
+    socket.on("connect", () => {
+      console.log("Connected:", socket.id);
+      socket.emit("joinRoom", roomId);
+    });
+  
+    socket.on("receiveMessage", (data) => {
+      console.log("Message received:", data);
+    });
+  
+    // Send message every 5 seconds
+    setInterval(() => {
+      socket.emit("sendMessage", {
+        roomId,
+        message: "Hello from " + socket.id,
+        username: "BrowserUser"
+      });
+    }, 5000);
+  </script>
+</body>
+</html>
